@@ -1,0 +1,11 @@
+say = ハロー、%s!
+
+hello.index.title = Revel frameworkでハロー、ワールド
+search.form.title = エピソードサーチ
+search.form.submit = 検索
+
+search.form.validate.title.required = タイトルは必須です。
+search.form.validate.title.min = タイトルは最低%d文字以上を入力してください。
+search.form.validate.runtime.number = 放送時間は数値を入力してください。
+search.form.validate.runtime.range = 放送時間は50から120の範囲で指定してください。
+search.form.validate.originalairdate.match = 放送月の指定が不正です。

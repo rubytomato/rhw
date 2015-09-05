@@ -1,0 +1,31 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+module:jobs
+
+GET     /                                       App.Index
+GET     /hello                                  Hello.Index
+GET     /greet/:greeting                        Hello.Greet
+
+GET     /columbo/search                         Columbo.Search
+GET     /columbo/confirm                        Columbo.Confirm
+GET     /columbo/result                         Columbo.Result
+
+GET     /columbo/json/:no                       Columbo.ResultJSON
+
+*       /hello/error                            Hello.HelloServerError
+*       /hello/notfound                         Hello.HelloNotFound
+*       /hello/forbidden                        Hello.HelloForbidden
+*       /error                                  Hello.HelloCustomError
+
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Map static resources from the /app/public folder to the /public path
+GET     /public/*filepath                       Static.Serve("public")
+
+# Catch all
+*       /:controller/:action                    :controller.:action

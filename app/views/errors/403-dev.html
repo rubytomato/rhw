@@ -1,0 +1,13 @@
+<h1>[DEV-MODE] Forbidden</h1>
+<div>
+    <h2>{{.Error}}</h2>
+    <div>
+        <dl>
+            {{range $index, $elem := .}}
+            <dt>{{$index}}</dt>
+            <dd>{{$elem}}</dd>
+            {{end}}
+        </dl>
+    </div>
+</div>
+

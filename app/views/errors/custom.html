@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Application error</title>
+</head>
+<body>
+<h1>Custom error page</h1>
+<div>
+    <h2>{{.custom}}</h2>
+    <div>
+        <dl>
+            {{range $index, $elem := .}}
+            <dt>{{$index}}</dt>
+            <dd>{{$elem}}</dd>
+            {{end}}
+        </dl>
+    </div>
+</div>
+</body>
+</html>
+

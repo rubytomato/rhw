@@ -1,0 +1,58 @@
+{{set . "title" "Result"}}
+{{set . "description" "Revel Web Framework sample application"}}
+{{template "header.html" .}}
+
+<header class="page-header">
+    <div class="container">
+        <div class="row">
+            <h1>Episodes Search Result</h1>
+        </div>
+    </div>
+</header>
+
+{{template "navi.html" .}}
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            {{template "flash.html" .}}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="span12">
+            {{with $list := .lists}}
+            <p>件数：{{len $list}}</p>
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>idx</th>
+                    <th>放送回</th>
+                    <th>シーズン</th>
+                    <th>放送日</th>
+                    <th>タイトル(邦題)</th>
+                    <th>放送時間</th>
+                    <th>日本放送日</th>
+                </tr>
+                </thead>
+                <tbody>
+                {{range $index, $elem := $list}}
+                <tr>
+                    <td>{{$index}}</td>
+                    <td>{{$elem.NoInSeries}}</td>
+                    <td>{{$elem.Season}} / {{$elem.NoInSeason}}</td>
+                    <td>{{$elem.OriginalAirDate}}</td>
+                    <td>{{$elem.Title}}<br/>({{$elem.JapaneseTitle}})</td>
+                    <td>{{$elem.Runtime}}分</td>
+                    <td>{{date $elem.JapaneseAirDate}}</td>
+                </tr>
+                {{end}}
+                </tbody>
+            </table>
+            {{end}}
+        </div>
+    </div>
+</div>
+{{template "footer.html" .}}
