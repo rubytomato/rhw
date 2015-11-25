@@ -2,15 +2,11 @@
   <library name="GOPATH &lt;rhw&gt;">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../tsp" />
-      <root url="file://$PROJECT_DIR$/../myapp3" />
       <root url="file://$PROJECT_DIR$/../code.google.com" />
-      <root url="file://$PROJECT_DIR$/../myapp2" />
-      <root url="file://$PROJECT_DIR$/../xyz" />
+      <root url="file://$PROJECT_DIR$/../9fans.net" />
       <root url="file://$PROJECT_DIR$/../gopkg.in" />
       <root url="file://$PROJECT_DIR$/../github.com" />
       <root url="file://$PROJECT_DIR$/../golang.org" />
-      <root url="file://$PROJECT_DIR$/../mywebapp" />
-      <root url="file://$PROJECT_DIR$/../myapp1" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
@@ -23,6 +19,7 @@
       <root url="file://$PROJECT_DIR$/../github.com/nsf/gocode/_goremote" />
       <root url="file://$PROJECT_DIR$/../github.com/nsf/gocode/_testing" />
       <root url="file://$PROJECT_DIR$/../github.com/tobi/airbrake-go/.git" />
+      <root url="file://$PROJECT_DIR$/../code.google.com/p/rog-go/exp/go/printer/testdata" />
       <root url="file://$PROJECT_DIR$/../github.com/streadway/amqp/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/net/html/charset/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/cmd/vet/testdata" />
@@ -36,12 +33,12 @@
       <root url="file://$PROJECT_DIR$/../github.com/getsentry/raven-go/.git" />
       <root url="file://$PROJECT_DIR$/../gopkg.in/mgo.v2/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/cmd/cover/testdata" />
-      <root url="file://$PROJECT_DIR$/../mywebapp/.idea" />
       <root url="file://$PROJECT_DIR$/../github.com/mattn/go-sqlite3/_example" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/text/encoding/testdata" />
       <root url="file://$PROJECT_DIR$/../github.com/revel/samples/.git" />
       <root url="file://$PROJECT_DIR$/../github.com/mrjones/oauth/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/.git" />
+      <root url="file://$PROJECT_DIR$/../code.google.com/p/rog-go/.hg" />
       <root url="file://$PROJECT_DIR$/../github.com/bradfitz/gomemcache/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/go/loader/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/crypto/ssh/testdata" />
@@ -67,18 +64,17 @@
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/go/ssa/interp/testdata" />
       <root url="file://$PROJECT_DIR$/../github.com/revel/revel/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/go/gcimporter/testdata" />
+      <root url="file://$PROJECT_DIR$/../9fans.net/go/.git" />
       <root url="file://$PROJECT_DIR$/../github.com/go-gorp/gorp/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/net/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/cmd/callgraph/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/go/gccgoimporter/testdata" />
-      <root url="file://$PROJECT_DIR$/../myapp1/.idea" />
       <root url="file://$PROJECT_DIR$/../github.com/dustin/go-humanize/.git" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/go/ssa/ssautil/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/cmd/fiximports/testdata" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/tools/oracle/testdata" />
       <root url="file://$PROJECT_DIR$/../github.com/robfig/go-cache/.git" />
       <root url="file://$PROJECT_DIR$/../github.com/garyburd/redigo/.git" />
-      <root url="file://$PROJECT_DIR$/../xyz/.idea" />
       <root url="file://$PROJECT_DIR$/../golang.org/x/crypto/sha3/testdata" />
       <root url="file://$PROJECT_DIR$/../github.com/streadway/amqp/_examples" />
       <root url="file://$PROJECT_DIR$/../github.com/naoina/genmai/.git" />

@@ -1,75 +1,59 @@
-# Welcome to Revel
+# 概要
 
-## Getting Started
-
-A high-productivity web framework for the [Go language](http://www.golang.org/).
-
-### Start the web server:
-
-    revel run myapp
-
-   Run with <tt>--help</tt> for options.
-
-### Go to http://localhost:9000/ and you'll see:
-
-"It works"
-
-### Description of Contents
-
-The default directory structure of a generated Revel application:
-
-    myapp               App root
-      app               App sources
-        controllers     App controllers
-          init.go       Interceptor registration
-        models          App domain models
-        routes          Reverse routes (generated code)
-        views           Templates
-      tests             Test suites
-      conf              Configuration files
-        app.conf        Main configuration file
-        routes          Routes definition
-      messages          Message files
-      public            Public assets
-        css             CSS files
-        js              Javascript files
-        images          Image files
-
-app
-
-    The app directory contains the source code and templates for your application.
-
-conf
-
-    The conf directory contains the application窶冱 configuration files. There are two main configuration files:
-
-    * app.conf, the main configuration file for the application, which contains standard configuration parameters
-    * routes, the routes definition file.
+GoのWeb Application FrameworkであるRevelを使って開発した簡単な検索アプリケーションです。
 
 
-messages
+**環境**
 
-    The messages directory contains all localized message files.
+* Go 1.4.2
+* Revel 0.12.0
 
-public
 
-    Resources stored in the public directory are static assets that are served directly by the Web server. Typically it is split into three standard sub-directories for images, CSS stylesheets and JavaScript files.
+## 事前準備
 
-    The names of these directories may be anything; the developer need only update the routes.
+Revelのインストール
 
-test
+```
+> go get -u -v github.com/revel/revel
+> go get -u -v github.com/revel/cmd/revel
+```
 
-    Tests are kept in the tests directory. Revel provides a testing framework that makes it easy to write and run functional tests against your application.
 
-### Follow the guidelines to start developing your application:
+## アプリケーションの実行
 
-* The README file created within your application.
-* The [Getting Started with Revel](http://revel.github.io/tutorial/index.html).
-* The [Revel guides](http://revel.github.io/manual/index.html).
-* The [Revel sample apps](http://revel.github.io/samples/index.html).
-* The [API documentation](http://revel.github.io/docs/godoc/index.html).
+アプリケーションのルートディレクトリで下記のrevel runコマンドを実行します。
 
-## Contributing
-We encourage you to contribute to Revel! Please check out the [Contributing to Revel
-guide](https://github.com/revel/revel/blob/master/CONTRIBUTING.md) for guidelines about how
-to proceed. [Join us](https://groups.google.com/forum/#!forum/revel-framework)!
+```
+> revel.exe run rhw
+```
+
+アプリケーションが起動したら下記のURLにアクセスするとページを見ることができます。
+アプリケーションの停止はコンソールからCtrl + Cで行います。
+
+http://localhost:9000
+
+
+## アプリケーションのビルド
+
+revel buildコマンドはアプリケーションの実行可能なバイナリファイルを生成します。(Windowsだとexeファイル)
+ビルドをする前にビルドで使用するテンポラリーフォルダが必要です。この例ではC:/tmpに作成しました。
+
+```
+> revel.exe build rhw "c:/tmp/rhw"
+```
+
+ビルドが成功するとテンポラリーフォルダに下記のファイルが生成されます。
+
+```
+> dir /b
+run.bat
+run.sh
+src
+rhw.exe
+```
+
+run.batファイルを実行するとwebアプリケーションが起動します。
+
+```
+> run.bat
+```
